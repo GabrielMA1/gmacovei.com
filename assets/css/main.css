@@ -4382,23 +4382,23 @@ input, select, textarea {
 
 		}
 
-	#copyright {
-		color: #ffffff;
-		position: relative;
-		color: rgba(255, 255, 255, 0.25);
-		cursor: default;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 0.8rem;
-		font-weight: 900;
-		letter-spacing: 0.075em;
-		line-height: 1.5;
-		text-align: center;
-		text-transform: uppercase;
-		margin: 4rem auto 8rem auto;
-		width: calc(100% - 4rem);
-		max-width: 72rem;
-		z-index: 2;
-	}
+		#copyright {
+			color: #717981; /* Change the color to black */
+			position: relative;
+			cursor: default;
+			font-family: "Source Sans Pro", Helvetica, sans-serif;
+			font-size: 0.8rem;
+			font-weight: 900;
+			letter-spacing: 0.075em;
+			line-height: 1.5;
+			text-align: center;
+			text-transform: uppercase;
+			margin: 4rem auto 8rem auto;
+			width: calc(100% - 4rem);
+			max-width: 72rem;
+			z-index: 2;
+		}
+		
 
 		#copyright input, #copyright select, #copyright textarea {
 			color: #ffffff;
