@@ -1,4 +1,19 @@
 RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
+RewriteBase /
+
+# Redirect "/index.html" to "/portfolio"
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+(index)\.html [NC]
+RewriteRule ^ /portfolio [R=301,L]
+
+# Redirect "/aboutme.html" to "/about"
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+(aboutme)\.html [NC]
+RewriteRule ^ /about [R=301,L]
+
+# Redirect "/resume.html" to "/resume"
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+(resume)\.html [NC]
+RewriteRule ^ /resume [R=301,L]
+
+# Serve HTML files without extension
 RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
